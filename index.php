@@ -62,41 +62,41 @@
  			<div class="container-fluid">
  				<article>
  					<h2>Eventos destacados</h2>
- 					<ul class="eventos-principales">
+ 					<ul class="eventos-principales row">
  						<?php
  							$destacados = array(
  								array(
- 									'title' => '22 de abril',
- 									'lugar' => 'Paul McCarney',
- 									'fecha' => 'Estadio River Plate',
+ 									'fecha' => '22 de abril',
+ 									'title' => 'Paul McCarney',
+ 									'lugar' => 'Estadio River Plate',
  									'image' => 'paul-mccartney'
  								),
  								array(
- 									'title' => '15 de mayo',
- 									'lugar' => 'Red Hot Chilli Peppers',
- 									'fecha' => 'Estadio Único de la Plata',
+ 									'fecha' => '15 de mayo',
+ 									'title' => 'Red Hot Chilli Peppers',
+ 									'lugar' => 'Estadio Único de la Plata',
  									'image' => 'red-hot-chilli-peppers'
  								),
  								array(
- 									'title' => '15 de septiembre',
- 									'lugar' => 'Alice in Chains',
- 									'fecha' => 'Estadio Directv',
+ 									'fecha' => '15 de septiembre',
+ 									'title' => 'Alice in Chains',
+ 									'lugar' => 'Estadio Directv',
  									'image' => 'alice-in-chains'
  								)
  							);
  							for($a=0; $a<sizeof($destacados);$a++){
  						?>
- 						<li>
+ 						<li class="col-md-4">
  							<a href="#" title="<?php echo $destacados[$a]['title'];?>">
  								<article class="placa-evento">
  									<span class="spanImg">
  										<img src="images/evento/destacados/<?php echo$destacados[$a]['image'];?>.jpg" alt="<?php echo $destacados[$a]['title'];?>">
  									</span>
- 									<div>
+ 									<div class="texto-placa">
  										<span><?php echo $destacados[$a]['fecha'];?></span>
  										<h1><?php echo $destacados[$a]['title'];?></h1>
  										<p><?php echo $destacados[$a]['lugar'];?></p>
- 										<b>Ver evento</b>
+ 										<b><i class="fas fa-angle-double-right"></i>Ver evento</b>
  									</div>
  								</article>
  							</a>
@@ -105,7 +105,7 @@
  							}
  						?>
  					</ul>
- 					<ul class="otros-eventos">
+ 					<ul class="otros-eventos row">
  						<?php
  							$otrosEventos = array(
  								array(
@@ -114,7 +114,7 @@
  								),
  								array(
  									'title' => '240519_IlDivo',
- 									'image' => 'il-divo'
+ 									'image' => '240519_IlDivo'
  								),
  								array(
  									'title' => 'Queen',
@@ -143,7 +143,7 @@
  							);
  							for($a=0; $a<sizeof($otrosEventos);$a++){
  						?>
- 						<li>
+ 						<li class="col-md-3">
  							<a href="#" title="otroEvento<?php echo $otrosEventos[$a]['title']; ?>">
  								<article class="otro-evento">
  									<span class="spanImg">
@@ -164,7 +164,8 @@
  		<section class="proximamenteArea">
  			<div class="container-fluid">
  				<article>
- 					<ul class="proximos-eventos">
+ 					<h2>Próximamente</h2>
+ 					<ul class="proximos-eventos row">
  						<?php
 
 							$proximos = array(
@@ -173,7 +174,7 @@
 									'image' => 'ariana-grande'
 								),
 								array(
-									'title' => 'Color Fetival',
+									'title' => 'Color Festival',
 									'image' => 'color-festival'
 								),
 								array(
@@ -193,7 +194,7 @@
  						?>
  						<li>
  							<a href="#" title="proximoEvento<?php echo $proximos[$a]['title']; ?>">
- 								<article class="otro-evento">
+ 								<article class="proximo-evento">
  									<span class="spanImg">
  										<img src="images/evento/proximamente/<?php echo $proximos[$a]['image']; ?>.jpg" alt="<?php echo $proximos[$a]['title']; ?>">
  									</span>
@@ -214,7 +215,7 @@
  			<div class="container-fluid">
  				<article>
  					<h2>Explora nuestro catálogo de eventos</h2>
- 					<ul class="catalogo-eventos">
+ 					<ul class="catalogo-eventos row">
  						<?php
  							$catalogo = array(
  								array(

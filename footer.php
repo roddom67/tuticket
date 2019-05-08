@@ -1,56 +1,58 @@
-		<footer class="container-fluid">
-			<article>
-				<ul>
-					<li>
-						<a class="navbar-brand " href="/"><span class="spanImg"><img src="images/tu-ticket-de-entrada-footer.png"  alt="Tu ticket de entrada" title="Tu ticket de entrada"></span></a>
-					</li>
-					<li>
-						<ul>
-						<?php
-							$footer = array(
-								array(
-									'title' => 'Ayuda'
-								),
-								array(
-									'title' => 'Puntos de venta'
-								),
-								array(
-									'title' => 'Beneficios'
-								),
-								array(
-									'title' => 'Productores y recintos'
-								),
-								array(
-									'title' => 'Términos y condiciones'
-								),
-								array(
-									'title' => 'Políticas de privacidad'
-								),
-								array(
-									'title' => 'La compañía'
-								),
-								array(
-									'title' => 'Uso de marca'
-								),
-								array(
-									'title' => 'Copyright 2019'
-								)
-							);
-							for($a=0;$a< sizeof($footer);$a++){
-						?>
-							<li>
-								<a href="" title="<?php echo $footer[$a]['title']; ?>"><?php echo $footer[$a]['title']; ?></a>
-							</li>
-						<?php
-							}
-						?>
-							<li>
-								<button href="" title="Ingreso productores" class="btnProductores btn">Ingreso productores</button>
-							</li>
-						</ul>
-					</li>
-				</ul>Footer
-			</article>
+		<footer>
+			<section class="container-fluid">
+				<article>
+					<ul class="row footer-content">
+						<li>
+							<a class="navbar-brand " href="/"><span class="spanImg"><img src="images/tu-ticket-de-entrada-footer.png"  alt="Tu ticket de entrada" title="Tu ticket de entrada"></span></a>
+						</li>
+						<li class="links-content">
+							<ul class="row links">
+							<?php
+								$footer = array(
+									array(
+										'title' => 'Ayuda'
+									),
+									array(
+										'title' => 'Puntos de venta'
+									),
+									array(
+										'title' => 'Beneficios'
+									),
+									array(
+										'title' => 'Productores y recintos'
+									),
+									array(
+										'title' => 'Términos y condiciones'
+									),
+									array(
+										'title' => 'Políticas de privacidad'
+									),
+									array(
+										'title' => 'La compañía'
+									),
+									array(
+										'title' => 'Uso de marca'
+									),
+									array(
+										'title' => 'Copyright 2019'
+									)
+								);
+								for($a=0;$a< sizeof($footer);$a++){
+							?>
+								<li>
+									<a href="" title="<?php echo $footer[$a]['title']; ?>"><?php echo $footer[$a]['title']; ?></a>
+								</li>
+							<?php
+								}
+							?>
+							</ul>
+						</li>
+						<li>
+							<button href="" title="Ingreso productores" class="btnProductores btn">Ingreso productores</button>
+						</li>
+					</ul>
+				</article>
+			</section>
 		</footer>
 	</main>
 <!--script type="text/javascript" src="../js/jquery.js"></script-->
