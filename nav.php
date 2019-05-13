@@ -21,6 +21,15 @@
         				</div>
       			</li>
       			<?php
+      		if(!isset($promociones)){
+      			if(isset($bandaNav)){
+      			?>
+      			<li class="bandaAComprar">
+      				<h2><?php echo $bandaNav ;?></h2>
+      				<p><?php echo $lugarNav; ?></p>
+      			</li>
+      			<?php
+      			} else{
 						$catalogo = array(
 							array(
 								'title' => 'Música',
@@ -50,6 +59,8 @@
 					</li>
 					<?php
 						}
+					}
+				}
 					?>
 
     			</ul>

@@ -1,19 +1,18 @@
 <!DOCTYPE HTML>
 <html lang="es">
 <?php
-	$page = 'Comprar';
-	$headTitulo = 'Comprar | Tu ticket de entrada';
-	$headDesc ='David  Mattews Band | Tu ticket de entrada';
+	$page = 'Promociones';
+	$headTitulo = 'Promociones | Tu ticket de entrada';
+	$headDesc ='Promociones | Tu ticket de entrada';
 	$headKeywords = 'ticket, entradas, eventos, música, cantantes, teatro, cine';
 	include("head.php");
 ?>
-<body class="comprar internas">
+<body class="promociones internas">
 	<main>
 		<header>
   			<div>
   				<?php
-  					$bandaNav = 'David Mattews Band';
-  					$lugarNav = 'Estadio Único La Plata';
+  					$promociones = true;
 					include("nav.php")
 				?>
  			</div>
@@ -22,197 +21,74 @@
   		<section class="fechasArea">
   			<div class="container-fluid">
    			<article>
-  					<h2>Fechas disponibles</h2>
-  					<p>15 al 21 de septiembre</p>
+  					<h2>Promociones</h2>
   					<section class="row">
   						<article class="col-md-8">
-  							<ul class="fechasListado">
-  								<?php
-									$fechas = array(
-										array(
-											'fecha' => 'Viernes 15 de septiembre - 21hs.',
-											'fechaCorta' => '15 <span>Sep</span>',
-											'lugar' => 'Estadio único de La Plata'
-										),
-										array(
-											'fecha' => 'Viernes 15 de septiembre - 21hs.',
-											'fechaCorta' => '15 <span>Sep</span>',
-											'lugar' => 'Estadio único de La Plata'
-										),
-										array(
-											'fecha' => 'Viernes 15 de septiembre - 21hs.',
-											'fechaCorta' => '15 <span>Sep</span>',
-											'lugar' => 'Estadio único de La Plata'
-										),
-										array(
-											'fecha' => 'Viernes 15 de septiembre - 21hs.',
-											'fechaCorta' => '15 <span>Sep</span>',
-											'lugar' => 'Estadio único de La Plata'
-										),
-										array(
-											'fecha' => 'Viernes 15 de septiembre - 21hs.',
-											'fechaCorta' => '15 <span>Sep</span>',
-											'lugar' => 'Estadio único de La Plata'
-										),
-										array(
-											'fecha' => 'Viernes 15 de septiembre - 21hs.',
-											'fechaCorta' => '15 <span>Sep</span>',
-											'lugar' => 'Estadio único de La Plata'
-										),
-										array(
-											'fecha' => 'Viernes 15 de septiembre - 21hs.',
-											'fechaCorta' => '15 <span>Sep</span>',
-											'lugar' => 'Estadio único de La Plata',
-											'agotado' => true
-										)
-									);
- 									for($a=0; $a<sizeof($fechas);$a++){
- 								?>
- 								<li>
- 									<?php
- 										$class = 'class=""';
- 										if(isset($fechas[$a]['agotado'])){$class = 'class="agotado"';}
- 									?>
- 									<a href="#" title="proximoEvento<?php echo $fechas[$a]['fecha']; ?>" <?php echo $class; ?>>
- 										<article class="proximo-evento">
- 											<ul>
- 												<li class="cajaFecha">
- 													<span><?php echo $fechas[$a]['fechaCorta']; ?></span>
- 												</li>
- 												<li>
- 													<h1><?php echo $fechas[$a]['fecha']; ?></h1>
- 													<p><?php echo $fechas[$a]['lugar'];  ?></p>
- 													<b><?php
- 														if(isset($fechas[$a]['agotado'])){
- 															echo 'Agotado';
- 														}else{
- 															echo 'Comprar';
- 														}
- 													 ?></b>
- 												</li>
- 											</ul>
- 										</article>
- 									</a>
- 								</li>
- 								<?php
- 									}
- 								?>
-  							</ul>
+  							<h3>Tarjeta 365</h3>
+  							<div class="row">
+  								<div class="spanImg col-md-4">
+  									<img src="images/metodos/clarin-365.jpg" alt="clarin-365">
+  								</div>
+  								<div class="col-md-8">
+  									<div>
+  										<img src="images/metodos/2x1.png" width="70" height="30" alt="2x1">
+  										<p>365 | 365 plus</p>
+  										<p>2X1 en entradas todos los días con ambas credenciales</p>
+  										<a href="" title="Ver sucursales con este beneficio" class="sucursales">Ver sucursales con este beneficio</a>
+  									</div>
+  									<div>
+  										<h4>Días</h4>
+   									<ul>
+   										<li>Do</li>
+   										<li>Lu</li>
+   										<li>Ma</li>
+   										<li>Mi</li>
+   										<li>Ju</li>
+   										<li>Vi</li>
+   										<li>Sa</li>
+  										</ul>
+  										<small>Válido hasta: 31/12/2019 - Términos y condiciones</small>
+ 									</div>
+  								</div>
+   							<div class="col-md-12">
+   								<h3>Términos y condiciones del beneficio</h3>
+   								<p>Beneficio válido todos los días hasta el 31/12/2019, para todos los socios 365 que presenten su tarjeta y un documento que acredite identidad. Aplica en todas las formas de pago que el comercio acepte al público en general, sobre los preicos vigentes al momento de su utilización. Sujeto a disponibilidad y a lo dispuesto por la legislación vigente. No se superpone con otros beneficios o promociones en los que intervenga otra marca o programa, pudiendo estar sujeto a futuras modificaciones. Deberás informar el uso del benefico antes de solicitar la factura o servicio. Clarín no tiene ninguna responsabilidad en relación a los productos que se adquieran, siendo el comercio el único responsable por tales cuestiones.</p>
+  								</div>
+ 							</div>
   						</article>
-  						<aside class="promocionesArea slider col-md-4">
-  							<h3>Promociones vigentes</h3>
-  							<ul class="sliderArea">
+  						<aside class="promocionesArea col-md-4">
+  							<h3>Otras Promociones</h3>
+  							<ul>
   								<?php
 									$promociones = array(
 										array(
-											'emisor' => 'Clarín 365',
-											'imgEmisor' => 'clarin-365.jpg',
-											'metodoPago' => array(
-												array(
-													'tarjeta' => 'Amex',
-													'imgTarjeta' => 'amex.jpg'
-												),
-												array(
-													'tarjeta' => 'Argencard',
-													'imgTarjeta' => 'argencard.jpg'
-												),
-												array(
-													'tarjeta' => 'Cabal',
-													'imgTarjeta' => 'cabal.jpg'
-												),
-												array(
-													'tarjeta' => 'Diners',
-													'imgTarjeta' => 'diners.jpg'
-												),
-												array(
-													'tarjeta' => 'MasterCard',
-													'imgTarjeta' => 'mastercard.jpg'
-												),
-												array(
-													'tarjeta' => 'Nativa',
-													'imgTarjeta' => 'nativa.jpg'
-												),
-												array(
-													'tarjeta' => 'Tarjeta Naranja',
-													'imgTarjeta' => 'naranja.jpg'
-												),
-												array(
-													'tarjeta' => 'Tarjeta Shopping',
-													'imgTarjeta' => 'shopping.jpg'
-												),
-												array(
-													'tarjeta' => 'Visa',
-													'imgTarjeta' => 'visa.jpg'
-												),
-												array(
-													'tarjeta' => 'Visa Débito',
-													'imgTarjeta' => 'visad.jpg'
-												)
-											)
+											'emisor' => 'Club La Nación',
+											'imgEmisor' => 'tarjeta-la-nacion.jpg'
 										),
 										array(
-											'emisor' => 'Club La Nación',
-											'imgEmisor' => 'club-la-nacion.jpg',
-											'metodoPago' => array(
-												array(
-													'tarjeta' => 'Amex',
-													'imgTarjeta' => 'amex.jpg'
-												),
-												array(
-													'tarjeta' => 'Argencard',
-													'imgTarjeta' => 'argencard.jpg'
-												),
-												array(
-													'tarjeta' => 'Cabal',
-													'imgTarjeta' => 'cabal.jpg'
-												),
-												array(
-													'tarjeta' => 'Diners',
-													'imgTarjeta' => 'diners.jpg'
-												),
-												array(
-													'tarjeta' => 'MasterCard',
-													'imgTarjeta' => 'mastercard.jpg'
-												),
-												array(
-													'tarjeta' => 'Tarjeta Shopping',
-													'imgTarjeta' => 'shopping.jpg'
-												),
-												array(
-													'tarjeta' => 'Visa',
-													'imgTarjeta' => 'visa.jpg'
-												),
-												array(
-													'tarjeta' => 'Visa Débito',
-													'imgTarjeta' => 'visad.jpg'
-												)
-											)
+											'emisor' => 'Servi Club',
+											'imgEmisor' => 'servi-club.jpg'
 										),
+										array(
+											'emisor' => 'ICBC',
+											'imgEmisor' => 'icbc.jpg'
+										),
+										array(
+											'emisor' => 'Santander Río',
+											'imgEmisor' => 'santander.jpg'
+										),
+
 									);
  									for($a=0; $a<sizeof($promociones);$a++){
  								?>
  								<li>
  									<div class="emisorImg">
- 										<a href="promociones.php" title="<?php echo $promociones[$a]['emisor']; ?>">
+ 										<a href="#" title="<?php echo $promociones[$a]['emisor']; ?>">
  											<span class="spanImg">
  												<img src="images/metodos/<?php echo $promociones[$a]['imgEmisor']; ?>" alt="<?php echo $promociones[$a]['emisor']; ?>" >
  											</span>
  										</a>
  									</div>
- 									<h3>Métodos de pago</h3>
- 									<ul class="metodosPago">
- 									<?php
- 										for($b=0; $b<sizeof($promociones[$a]['metodoPago']);$b++){
- 									?>
- 										<li>
- 											<span class="spanImg">
- 												<img src="images/metodos/<?php echo $promociones[$a]['metodoPago'][$b]['imgTarjeta']; ?>" alt="<?php echo $promociones[$a]['metodoPago'][$b]['tarjeta']; ?>" >
- 											</span>
- 										</li>
- 									<?php
- 										}
- 									?>
- 									</ul>
  									
  								</li>
  								<?php

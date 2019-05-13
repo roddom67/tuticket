@@ -18,6 +18,20 @@ $(function(){
 	
 	sliderGaleria.init();
 	
+	sliderPromo = {
+		init: function(){
+			if($('aside').hasClass('slider')){
+				$('.sliderArea').bxSlider({
+					autoControls: true,
+					pager: false,
+					mode: 'fade'
+				});
+			}
+		}
+	}
+	
+	sliderPromo.init();
+	
 
 	articleHeight = {
 		init: function(){
