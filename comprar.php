@@ -35,33 +35,33 @@
 											'lugar' => 'Estadio único de La Plata'
 										),
 										array(
-											'fecha' => 'Viernes 15 de septiembre - 21hs.',
-											'fechaCorta' => '15 <span>Sep</span>',
+											'fecha' => 'Sábado 16 de septiembre - 21hs.',
+											'fechaCorta' => '16 <span>Sep</span>',
 											'lugar' => 'Estadio único de La Plata'
 										),
 										array(
-											'fecha' => 'Viernes 15 de septiembre - 21hs.',
-											'fechaCorta' => '15 <span>Sep</span>',
+											'fecha' => 'Domingo 17 de septiembre - 21hs.',
+											'fechaCorta' => '17 <span>Sep</span>',
 											'lugar' => 'Estadio único de La Plata'
 										),
 										array(
-											'fecha' => 'Viernes 15 de septiembre - 21hs.',
-											'fechaCorta' => '15 <span>Sep</span>',
+											'fecha' => 'Lunes 18 de septiembre - 21hs.',
+											'fechaCorta' => '18 <span>Sep</span>',
 											'lugar' => 'Estadio único de La Plata'
 										),
 										array(
-											'fecha' => 'Viernes 15 de septiembre - 21hs.',
-											'fechaCorta' => '15 <span>Sep</span>',
+											'fecha' => 'Martes 19 de septiembre - 21hs.',
+											'fechaCorta' => '19 <span>Sep</span>',
 											'lugar' => 'Estadio único de La Plata'
 										),
 										array(
-											'fecha' => 'Viernes 15 de septiembre - 21hs.',
-											'fechaCorta' => '15 <span>Sep</span>',
+											'fecha' => 'Miércoles 20 de septiembre - 21hs.',
+											'fechaCorta' => '20 <span>Sep</span>',
 											'lugar' => 'Estadio único de La Plata'
 										),
 										array(
-											'fecha' => 'Viernes 15 de septiembre - 21hs.',
-											'fechaCorta' => '15 <span>Sep</span>',
+											'fecha' => 'Jueves 21 de septiembre - 21hs.',
+											'fechaCorta' => '21 <span>Sep</span>',
 											'lugar' => 'Estadio único de La Plata',
 											'agotado' => true
 										)
@@ -312,7 +312,7 @@
   								</tbody>
   							</table>
   						</li>
-  						<li class="col-md-7">
+  						<li class="col-md-7 plano">
   							<span class="spanImg">
   								<img src="images/estadios/estadio-unico-la-plata-planta.png" alt="Estadio Único La Plata">
   							</span>

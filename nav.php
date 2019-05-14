@@ -3,7 +3,7 @@
 		<a class="navbar-brand " href="/tuticket"><span class="spanImg"><img src="images/tu-ticket-de-entrada.png" alt="Tu ticket de entrada" title="Tu ticket de entrada"></span></a>
 
   	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    	<span class="navbar-toggler-icon"></span>
+    	<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
   	</button>
 
   	<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -14,7 +14,7 @@
         				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           				<i class="fab fa-twitter"></i>
         				</a>
-        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        				<div class="dropdown-menu redes-sociales" aria-labelledby="navbarDropdown">
           				<a class="dropdown-item" href="#"><i class="fab fa-twitter"></i></a>
           				<a class="dropdown-item" href="#"><i class="fab fa-facebook-f"></i></a>
           				<a class="dropdown-item" href="#"><i class="fab fa-instagram"></i></a>

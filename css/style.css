@@ -51,7 +51,11 @@ main{
 	width: 100%;
 }
 .container-fluid{
-	padding: 0 4.5rem;
+	padding: 0 4.5em;
+}
+.navbar-toggler-icon i{
+	font-size: 20px;
+	color: #fff;
 }
 /*FIN GLOBAL*/
 
@@ -111,6 +115,9 @@ header{
 }
 .navbar-brand{
 	padding: 0;
+}
+.navbar-nav > li > ul{
+	flex-direction:column;
 }
 .navbar-nav > li > ul > li{
 	padding: 0 10px;
@@ -734,6 +741,7 @@ footer .links li{
 }
 .preciosEntradas .texto p{
 	text-transform: uppercase;
+	padding-bottom: 0;
 }
 .preciosEntradas .color span{
 	width: 20px;
@@ -1007,11 +1015,129 @@ height: 100%;
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 768px) {
+
 	
 }
 /* Small devices (landscape phones, 767px and down)*/
 @media (max-width: 767px) {
-
+	.navbar{
+		padding:20px 0;
+	}
+	.container-fluid{
+		padding: 0 10px;
+	}
+	.navbar-collapse{
+		background:#ebf9fb;
+		margin-top: 10px;
+	}
+	.navbar-nav ul li a{
+		color: #0095ad;
+	}
+	.navbar-nav > li{
+		border-top: 1px solid #0095ad;
+	}
+	.navbar-nav > li > ul > li{
+		padding: 5px 0;
+		border-top: 1px solid #0095ad;
+		width: 100%;
+		text-align: center;
+	}
+	.navbar-nav > li > ul > li:first-child{
+		border: none;
+	}
+	.navbar-nav ul li .redes-sociales{
+		display: flex;
+		flex-direction:row;
+		justify-content:center;
+	}
+	.navbar-nav ul li .redes-sociales a{
+		width:auto;
+	}
+	.texto-evento{
+		padding: 30px 10px;
+		bottom: 40px;
+	}
+	.texto-evento .fecha{
+		font-size: 16px;
+	}
+	.texto-evento h1{
+		font-size: 38px;
+	}
+	.texto-evento p{
+		font-size: 24px;
+	}
+	.texto-evento a{
+		padding: 10px 15px; 
+	}
+	section h2{
+		font-size: 27px;
+	}
+	.texto-placa h1{
+		font-size: 26px;
+	}
+	.texto-placa p{
+		font-size:18px;
+	}
+	.eventos-principales li{
+		padding-bottom: 10px;
+		padding-top: 10px;
+		border-top:1px solid #0095ad;
+	}
+	.eventos-principales li:first-child{
+		border: none;
+	}
+	.otros-eventos{
+		margin: 0 -10px;
+	}
+	.otros-eventos li{
+		padding: 10px;
+		width: 50%;
+	}
+	.proximos-eventos li{
+		width:50%;
+	}
+	.proximo-evento h1{
+		font-size: 18px;
+	}
+	.catalogo-eventos li{
+		width: 100% !important;
+	}
+	.otro-evento h1{
+		font-size: 40px !important;
+	}
+	
+	.footer-content{
+		justify-content:center;
+	}
+	.footer-content > li{
+		padding-bottom: 20px;
+		width: 90%;
+		text-align: center;
+	}
+	footer .links{
+		margin: 0;
+	}
+	
+	.fechasListado > li{
+		width: 100%;
+		border-top:1px solid #0095ad;
+	}
+	.fechasListado > li:first-child{
+		border: none;
+	}
+	.promocionesArea{
+		padding-top: 40px;
+	}
+	
+	.preciosEntradas .texto p{
+		font-size: 18px;
+	}
+	.plano{
+		padding-top: 20px;
+	}
+	.aboutArea aside{
+		padding-top:40px;
+	}
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
