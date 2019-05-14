@@ -1140,8 +1140,37 @@ height: 100%;
 	}
 }
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-	
+@media (min-width: 768px) and (max-width: 991px){
+	.placa-evento .spanImg{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	.placa-evento{
+		flex-direction:column;
+	}
+	.fechasListado > li{
+		width: 100%;
+		border-top:1px solid #0095ad;
+	}
+	.fechasListado > li:first-child{
+		border: none;
+	}
+	.lugarArea ul{
+		flex-direction:column;
+	}
+	.lugarArea ul li{
+		max-width:100%;
+	}
+	.plano{
+		padding-top: 20px;
+	}
+	.historiaLugarArea .row{
+		flex-direction: column;
+	}
+	.historiaLugarArea article,
+	.historiaLugarArea aside{
+		max-width: 100%;
+	}
 }
 
 /* Large devices (desktops, 992px and up)*/
