@@ -117,7 +117,7 @@ header{
 	padding: 0;
 }
 .navbar-nav > li > ul{
-	flex-direction:column;
+	flex-direction:row;
 }
 .navbar-nav > li > ul > li{
 	padding: 0 10px;
@@ -1137,6 +1137,9 @@ height: 100%;
 	}
 	.aboutArea aside{
 		padding-top:40px;
+	}
+	.navbar-nav > li > ul{
+		flex-direction:column;
 	}
 }
 /* Medium devices (tablets, 768px and up)*/

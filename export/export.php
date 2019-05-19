@@ -1,7 +1,7 @@
 <?php
 if ( !defined('__DIR__') ) define('__DIR__', dirname(__FILE__));
 
-$url = 'http://crossmedia.banamex.corporativo/';
+$url = 'http://localhost/tuticket/';
 $folder = './';
 $files = getDirectoryList(__DIR__);
 
