@@ -28,6 +28,9 @@
 										'title' => 'Políticas de privacidad'
 									),
 									array(
+										'title' => 'Call center 0800-000-0000'
+									),
+									array(
 										'title' => 'La compañía'
 									),
 									array(
@@ -35,7 +38,8 @@
 									),
 									array(
 										'title' => 'Copyright 2019'
-									)
+									)								
+									
 								);
 								for($a=0;$a< sizeof($footer);$a++){
 							?>
@@ -48,7 +52,7 @@
 							</ul>
 						</li>
 						<li>
-							<button href="" title="Ingreso productores" class="btnProductores btn">Ingreso productores</button>
+							<a href="www.tuticketdeentrada.com.ar" title="Tu ticket de entrada" class="btnProductores btn">www.tuticketdeentrada.com.ar</a>
 						</li>
 					</ul>
 				</article>

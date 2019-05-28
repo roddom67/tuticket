@@ -69,7 +69,7 @@
     			<ul>
     				<li class="nav-item dropdown search-link">
     					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          				Buscar
+    						<img src="css/image/buscar.png" width="40" alt="Buscar">
         				</a>
         				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
     						<form class="form-inline my-3 my-lg-0">
@@ -78,12 +78,12 @@
     						</form>
     					</div>
     				</li>
-    				<li>
+    				<!-- <li>
     					<a href="" title="mobile">mobile</a>
     				</li>
     				<li>
     					<a href="" title="ingresar">ingresar</a>
-    				</li>
+    				</li> -->
     			</ul>
     		</li>
     	</ul>
