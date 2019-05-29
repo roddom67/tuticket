@@ -84,7 +84,7 @@ header{
 }
 .internas .navbar{
 	padding-top: 20px;
-	align-items:end;
+	align-items:center;
 }
 .navbar:after{
 	content:'';
@@ -101,7 +101,7 @@ header{
 	width: 100%;
 }
 .internas .navbar-brand{
-	padding-bottom: 3px;
+	padding-bottom: 0px;
 }
 .navbar-nav ul{
 	display: flex;
@@ -121,6 +121,9 @@ header{
 }
 .navbar-nav > li > ul > li{
 	padding: 0 10px;
+}
+.navbar-nav > li > ul > li.bandaAComprar{
+	padding-left: 60px;
 }
 .internas .bandaAComprar h2{
 	font-size: 32px;
@@ -150,6 +153,8 @@ header{
 	background: #fff3;
 	border-radius: 3px;
 	min-width: inherit;
+	left: inherit;
+	right: 0;
 }
 .dropdown-item{
 	padding: 10px 5px;
@@ -358,9 +363,10 @@ section h2{
 .texto-placa span{
 	color: #1b4b53;
 	font-family: 'Noto Sans', sans-serif;
-	font-size: 15px;
+	font-size: 19px;
 	border-bottom: 1px solid #1b4b53;
 	padding-bottom: 3px;
+	text-transform: uppercase;
 }
 .texto-placa h1{
 	color: #0095ad;
@@ -378,7 +384,8 @@ section h2{
 a .texto-placa b{
 	color: #0095ad;
 	font-family: 'Noto Sans', sans-serif;
-	font-size: 16px;
+	font-size: 19px;
+	text-transform: uppercase;
 }
 a:hover .texto-placa b{
 	border-bottom: 1px solid #0095ad;
@@ -468,6 +475,50 @@ a:hover .proximo-evento b{
 	border-bottom: 1px solid #0095ad;
 }
 
+.bandaAComprar{
+	display: flex;
+	align-items:center;
+}
+.bandaAComprar .proximo-evento{
+	padding-left: 40px;
+}
+.bandaAComprar .proximo-evento ul{
+	display: flex;
+	flex-direction:row;
+	align-items:center;
+}
+.bandaAComprar .proximo-evento ul li{
+	padding-right: 10px;
+}
+.bandaAComprar .proximo-evento h1{
+	color: #fff;
+	padding: 0;
+	font-size: 16px;
+	margin: 0;
+}
+.bandaAComprar .proximo-evento p{
+	font-size: 14px;
+}
+.bandaAComprar .proximo-evento .cajaFecha > span {
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 15px;
+
+}
+.bandaAComprar .proximo-evento .cajaFecha > span span {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+
+}
 .catalogoArea{
 	padding: 60px 0 90px;
 }
@@ -521,21 +572,25 @@ a:hover .proximo-evento b{
 
 footer{
 	border-top:1px solid #1b4b53;
-	padding: 20px 0 60px;
+	padding: 60px 0;
 }
 .footer-content{
 	justify-content:space-between;
 	align-items:center;
 	flow-wrap:nowrap;
 }
+.footer-content > li{
+	width: 25%;
+}
 footer a{
-	font-size: 18px;
+	font-size: 15px;
 	color:#1b4b53;
 	text-transform: uppercase;
 }
 
 footer .links{
 	justify-content:center;
+	margin: 0;
 }
 footer .links a{
 	position:relative;
@@ -556,18 +611,19 @@ footer .links li:first-child a:before{
 footer .links li{
 	padding: 0 5px;
 }
-.links-content{
+.footer-content > li.links-content{
 	width:50%;
 }
 
 .btnProductores {
-	font-size: 18px;
+	font-size: 14px;
 	color:#1b4b53;
 	border: 1px solid #1b4b53;
 	background:#fff;
 	border-radius: 30px;
 	padding: 15px;
 	line-height: 1;
+	float: right;
 }
 
 /* Compras */
@@ -656,6 +712,9 @@ footer .links li{
 .promocionesArea{
 	border-left: 1px solid #9a9a9a;
 }
+.promocionesArea > div{
+	padding: 0 10%;
+}
 .promocionesArea  h3{
 	font-size: 25px;
 	text-transform: uppercase;
@@ -737,7 +796,7 @@ footer .links li{
 .preciosEntradas td,
 .preciosEntradas th{
 	color: #9a9a9a;
-	font-size: 18px;
+	font-size: 15px;
 	text-align: center;
 }
 .preciosEntradas th{
@@ -749,10 +808,11 @@ footer .links li{
 .preciosEntradas .texto p{
 	text-transform: uppercase;
 	padding-bottom: 0;
+	font-size: 20px;
 }
 .preciosEntradas .color span{
 	width: 20px;
-	height: 70px;
+	height: 50px;
 	display:block;
 	margin: 10px 2px;
 }
@@ -765,6 +825,11 @@ footer .links li{
 }
 .preciosEntradas td.color{
 	border: none;
+}
+.plano .spanImg{
+	width: 60%;
+	margin: 60px auto 0;
+	display: block;
 }
 .redesSocialesArea{
 	background: url(../images/redes-sociales.jpg) no-repeat top center;
@@ -1012,6 +1077,11 @@ height: 100%;
 .otrasPromosArea ul li{
 	padding: 10px 25% ;
 }
+nav .mobile,
+nav .tablet{
+	display: none;
+}
+
 /*--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px*/
 
 @media (max-width: 575px) {
@@ -1032,9 +1102,38 @@ height: 100%;
 	.navbar{
 		padding:20px 0;
 	}
+	nav .pc{
+		display: none;
+	}
+	nav .mobile{
+		display: block;
+	}
+	.navbar-toggler{
+		margin-left: auto;
+	}
+	nav > ul{
+		margin-left: 20px;
+	}
+	.dropdown-menu.show{
+		width: 200px;
+	}
+
 	.container-fluid{
 		padding: 0 10px;
 		overflow: hidden;
+	}
+	header .container-fluid{
+		overflow: visible;
+	}
+	.bandaAComprar{
+		padding-top: 20px;
+		flex-direction:column;
+	}
+	.bandaAComprar > div{
+		width: 100%;
+	}
+	.bandaAComprar .proximo-evento{
+		padding: 10px 0 0;
 	}
 	.navbar-collapse{
 		background:#ebf9fb;
@@ -1131,6 +1230,9 @@ height: 100%;
 	footer .links{
 		margin: 0;
 	}
+	.btnProductores{
+		float: none;
+	}
 	
 	.fechasListado > li{
 		width: 100%;
@@ -1155,6 +1257,19 @@ height: 100%;
 	.navbar-nav > li > ul{
 		flex-direction:column;
 	}
+	.plano .spanImg{
+		width:95%;
+	}
+	.footer-content > li.links-content{
+		width:100%;
+	}
+	footer .links a{
+		font-size: 12px;
+		padding:5px 0;
+	}
+	footer .links a:before{
+		top:2px;
+	}
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px){
@@ -1164,6 +1279,7 @@ height: 100%;
 	}
 	.placa-evento{
 		flex-direction:column;
+		height: 100%;
 	}
 	.fechasListado > li{
 		width: 100%;
@@ -1187,6 +1303,40 @@ height: 100%;
 	.historiaLugarArea article,
 	.historiaLugarArea aside{
 		max-width: 100%;
+	}
+	nav .pc{
+		display: none;
+	}
+	nav .tablet{
+		display: block;
+		padding-left: 20px;
+	}
+	.navbar-toggler{
+		margin-left: auto;
+	}
+	.navbar-nav{
+		margin-top:20px;
+	}
+	.placa-evento .texto-placa{
+		width: 100%;
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+		height: 100%;
+	}
+	.footer-content > li{
+		width:50%;
+	}
+	.footer-content > li:last-child{
+		width: 100%;
+		padding-top: 20px;
+		text-align:center;
+	}
+	.btnProductores{
+		float:none;
+	}
+	.internas .navbar{
+		flex-wrap:nowrap;
 	}
 }
 

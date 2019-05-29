@@ -93,9 +93,11 @@
  										<img src="images/evento/destacados/<?php echo$destacados[$a]['image'];?>.jpg" alt="<?php echo $destacados[$a]['title'];?>">
  									</span>
  									<div class="texto-placa">
- 										<span><?php echo $destacados[$a]['fecha'];?></span>
- 										<h1><?php echo $destacados[$a]['title'];?></h1>
- 										<p><?php echo $destacados[$a]['lugar'];?></p>
+ 										<div>
+  											<span><?php echo $destacados[$a]['fecha'];?></span>
+ 											<h1><?php echo $destacados[$a]['title'];?></h1>
+ 											<p><?php echo $destacados[$a]['lugar'];?></p>
+										</div>
  										<b><i class="fas fa-angle-double-right"></i>Ver evento</b>
  									</div>
  								</article>

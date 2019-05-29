@@ -9,6 +9,7 @@ $(function(){
 			if($('article').hasClass('slider')){
 				$('.sliderArea').bxSlider({
 					autoControls: true,
+					auto:true,
 					pager: true,
 					mode: 'fade'
 				});

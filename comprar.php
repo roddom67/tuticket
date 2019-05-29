@@ -100,125 +100,127 @@
   							</ul>
   						</article>
   						<aside class="promocionesArea slider col-md-4">
-  							<h3>Promociones vigentes</h3>
-  							<ul class="sliderArea">
-  								<?php
-									$promociones = array(
-										array(
-											'emisor' => 'Clarín 365',
-											'imgEmisor' => 'clarin-365.jpg',
-											'metodoPago' => array(
-												array(
-													'tarjeta' => 'Amex',
-													'imgTarjeta' => 'amex.jpg'
-												),
-												array(
-													'tarjeta' => 'Argencard',
-													'imgTarjeta' => 'argencard.jpg'
-												),
-												array(
-													'tarjeta' => 'Cabal',
-													'imgTarjeta' => 'cabal.jpg'
-												),
-												array(
-													'tarjeta' => 'Diners',
-													'imgTarjeta' => 'diners.jpg'
-												),
-												array(
-													'tarjeta' => 'MasterCard',
-													'imgTarjeta' => 'mastercard.jpg'
-												),
-												array(
-													'tarjeta' => 'Nativa',
-													'imgTarjeta' => 'nativa.jpg'
-												),
-												array(
-													'tarjeta' => 'Tarjeta Naranja',
-													'imgTarjeta' => 'naranja.jpg'
-												),
-												array(
-													'tarjeta' => 'Tarjeta Shopping',
-													'imgTarjeta' => 'shopping.jpg'
-												),
-												array(
-													'tarjeta' => 'Visa',
-													'imgTarjeta' => 'visa.jpg'
-												),
-												array(
-													'tarjeta' => 'Visa Débito',
-													'imgTarjeta' => 'visad.jpg'
+  							<div>
+  								<h3>Promociones vigentes</h3>
+  								<ul class="sliderArea">
+  									<?php
+										$promociones = array(
+											array(
+												'emisor' => 'Clarín 365',
+												'imgEmisor' => 'clarin-365.jpg',
+												'metodoPago' => array(
+													array(
+														'tarjeta' => 'Amex',
+														'imgTarjeta' => 'amex.jpg'
+													),
+													array(
+														'tarjeta' => 'Argencard',
+														'imgTarjeta' => 'argencard.jpg'
+													),
+													array(
+														'tarjeta' => 'Cabal',
+														'imgTarjeta' => 'cabal.jpg'
+													),
+													array(
+														'tarjeta' => 'Diners',
+														'imgTarjeta' => 'diners.jpg'
+													),
+													array(
+														'tarjeta' => 'MasterCard',
+														'imgTarjeta' => 'mastercard.jpg'
+													),
+													array(
+														'tarjeta' => 'Nativa',
+														'imgTarjeta' => 'nativa.jpg'
+													),
+													array(
+														'tarjeta' => 'Tarjeta Naranja',
+														'imgTarjeta' => 'naranja.jpg'
+													),
+													array(
+														'tarjeta' => 'Tarjeta Shopping',
+														'imgTarjeta' => 'shopping.jpg'
+													),
+													array(
+														'tarjeta' => 'Visa',
+														'imgTarjeta' => 'visa.jpg'
+													),
+													array(
+														'tarjeta' => 'Visa Débito',
+														'imgTarjeta' => 'visad.jpg'
+													)
 												)
-											)
-										),
-										array(
-											'emisor' => 'Club La Nación',
-											'imgEmisor' => 'club-la-nacion.jpg',
-											'metodoPago' => array(
-												array(
-													'tarjeta' => 'Amex',
-													'imgTarjeta' => 'amex.jpg'
-												),
-												array(
-													'tarjeta' => 'Argencard',
-													'imgTarjeta' => 'argencard.jpg'
-												),
-												array(
-													'tarjeta' => 'Cabal',
-													'imgTarjeta' => 'cabal.jpg'
-												),
-												array(
-													'tarjeta' => 'Diners',
-													'imgTarjeta' => 'diners.jpg'
-												),
-												array(
-													'tarjeta' => 'MasterCard',
-													'imgTarjeta' => 'mastercard.jpg'
-												),
-												array(
-													'tarjeta' => 'Tarjeta Shopping',
-													'imgTarjeta' => 'shopping.jpg'
-												),
-												array(
-													'tarjeta' => 'Visa',
-													'imgTarjeta' => 'visa.jpg'
-												),
-												array(
-													'tarjeta' => 'Visa Débito',
-													'imgTarjeta' => 'visad.jpg'
+											),
+											array(
+												'emisor' => 'Club La Nación',
+												'imgEmisor' => 'club-la-nacion.jpg',
+												'metodoPago' => array(
+													array(
+														'tarjeta' => 'Amex',
+														'imgTarjeta' => 'amex.jpg'
+													),
+													array(
+														'tarjeta' => 'Argencard',
+														'imgTarjeta' => 'argencard.jpg'
+													),
+													array(
+														'tarjeta' => 'Cabal',
+														'imgTarjeta' => 'cabal.jpg'
+													),
+													array(
+														'tarjeta' => 'Diners',
+														'imgTarjeta' => 'diners.jpg'
+													),
+													array(
+														'tarjeta' => 'MasterCard',
+														'imgTarjeta' => 'mastercard.jpg'
+													),
+													array(
+														'tarjeta' => 'Tarjeta Shopping',
+														'imgTarjeta' => 'shopping.jpg'
+													),
+													array(
+														'tarjeta' => 'Visa',
+														'imgTarjeta' => 'visa.jpg'
+													),
+													array(
+														'tarjeta' => 'Visa Débito',
+														'imgTarjeta' => 'visad.jpg'
+													)
 												)
-											)
-										),
-									);
- 									for($a=0; $a<sizeof($promociones);$a++){
- 								?>
- 								<li>
- 									<div class="emisorImg">
- 										<a href="promociones.php" title="<?php echo $promociones[$a]['emisor']; ?>">
- 											<span class="spanImg">
- 												<img src="images/metodos/<?php echo $promociones[$a]['imgEmisor']; ?>" alt="<?php echo $promociones[$a]['emisor']; ?>" >
- 											</span>
- 										</a>
- 									</div>
- 									<h3>Métodos de pago</h3>
- 									<ul class="metodosPago">
- 									<?php
- 										for($b=0; $b<sizeof($promociones[$a]['metodoPago']);$b++){
+											),
+										);
+ 										for($a=0; $a<sizeof($promociones);$a++){
  									?>
- 										<li>
- 											<span class="spanImg">
- 												<img src="images/metodos/<?php echo $promociones[$a]['metodoPago'][$b]['imgTarjeta']; ?>" alt="<?php echo $promociones[$a]['metodoPago'][$b]['tarjeta']; ?>" >
- 											</span>
- 										</li>
+ 									<li>
+ 										<div class="emisorImg">
+ 											<a href="promociones.php" title="<?php echo $promociones[$a]['emisor']; ?>">
+ 												<span class="spanImg">
+ 													<img src="images/metodos/<?php echo $promociones[$a]['imgEmisor']; ?>" alt="<?php echo $promociones[$a]['emisor']; ?>" >
+ 												</span>
+ 											</a>
+ 										</div>
+ 										<h3>Métodos de pago</h3>
+ 										<ul class="metodosPago">
+ 										<?php
+ 											for($b=0; $b<sizeof($promociones[$a]['metodoPago']);$b++){
+ 										?>
+ 											<li>
+ 												<span class="spanImg">
+ 													<img src="images/metodos/<?php echo $promociones[$a]['metodoPago'][$b]['imgTarjeta']; ?>" alt="<?php echo $promociones[$a]['metodoPago'][$b]['tarjeta']; ?>" >
+ 												</span>
+ 											</li>
+ 										<?php
+ 											}
+ 										?>
+ 										</ul>
+ 									
+ 									</li>
  									<?php
  										}
  									?>
- 									</ul>
- 									
- 								</li>
- 								<?php
- 									}
- 								?>
-  							</ul>
+  								</ul>
+  							</div>
   						</aside>
   					</section>
   				</article>

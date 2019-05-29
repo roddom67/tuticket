@@ -61,44 +61,46 @@
  							</div>
   						</article>
   						<aside class="otrasPromosArea col-md-4">
-  							<h3>Otras Promociones</h3>
-  							<ul>
-  								<?php
-									$promociones = array(
-										array(
-											'emisor' => 'Club La Nación',
-											'imgEmisor' => 'tarjeta-la-nacion.jpg'
-										),
-										array(
-											'emisor' => 'Servi Club',
-											'imgEmisor' => 'servi-club.jpg'
-										),
-										array(
-											'emisor' => 'ICBC',
-											'imgEmisor' => 'icbc.jpg'
-										),
-										array(
-											'emisor' => 'Santander Río',
-											'imgEmisor' => 'santander.jpg'
-										),
+  							<div>
+  								<h3>Otras Promociones</h3>
+  								<ul>
+  									<?php
+										$promociones = array(
+											array(
+												'emisor' => 'Club La Nación',
+												'imgEmisor' => 'tarjeta-la-nacion.jpg'
+											),
+											array(
+												'emisor' => 'Servi Club',
+												'imgEmisor' => 'servi-club.jpg'
+											),
+											array(
+												'emisor' => 'ICBC',
+												'imgEmisor' => 'icbc.jpg'
+											),
+											array(
+												'emisor' => 'Santander Río',
+												'imgEmisor' => 'santander.jpg'
+											),
 
-									);
- 									for($a=0; $a<sizeof($promociones);$a++){
- 								?>
- 								<li>
- 									<div class="emisorImg">
- 										<a href="#" title="<?php echo $promociones[$a]['emisor']; ?>">
- 											<span class="spanImg">
- 												<img src="images/metodos/<?php echo $promociones[$a]['imgEmisor']; ?>" alt="<?php echo $promociones[$a]['emisor']; ?>" >
- 											</span>
- 										</a>
- 									</div>
+										);
+ 										for($a=0; $a<sizeof($promociones);$a++){
+ 									?>
+ 									<li>
+ 										<div class="emisorImg">
+ 											<a href="#" title="<?php echo $promociones[$a]['emisor']; ?>">
+ 												<span class="spanImg">
+ 													<img src="images/metodos/<?php echo $promociones[$a]['imgEmisor']; ?>" alt="<?php echo $promociones[$a]['emisor']; ?>" >
+ 												</span>
+ 											</a>
+ 										</div>
  									
- 								</li>
- 								<?php
- 									}
- 								?>
-  							</ul>
+ 									</li>
+ 									<?php
+ 										}
+ 									?>
+  								</ul>
+  							</div>
   						</aside>
   					</section>
   				</article>
