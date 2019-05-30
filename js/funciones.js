@@ -8,7 +8,7 @@ $(function(){
 		init: function(){
 			if($('article').hasClass('slider')){
 				$('.sliderArea').bxSlider({
-					autoControls: true,
+					autoControls: false,
 					auto:true,
 					pager: true,
 					mode: 'fade'
