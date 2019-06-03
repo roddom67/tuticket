@@ -1290,6 +1290,27 @@ nav .tablet{
 		top:2px;
 	}
 }
+/* Small devices (landscape phones, 767px and up)*/
+@media (max-width: 767px) and (orientation: landscape) {
+	.texto-evento h1{
+		font-size:24px;
+	}
+	.texto-evento{
+		padding: 0 20px;
+	}
+	.bx-controls-direction{
+		display: none;
+	}
+	.texto-evento a{
+		font-size: 12px;
+		padding: 7px 15px;
+	}
+	.texto-evento p{
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	
+}
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px){
 	.placa-evento .spanImg{
