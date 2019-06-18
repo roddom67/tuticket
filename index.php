@@ -44,12 +44,14 @@
  							for($a=0;$a < sizeof($slider);$a++){
  						?>
 						<li style="background-image: url('images/evento/banda/<?php echo $slider[$a]['image']; ?>/<?php echo $slider[$a]['image']; ?>-<?php echo $a+1; ?>.jpg')">
- 							<article class="texto-evento">
- 								<span class="fecha"><?php echo $slider[$a]['fecha']; ?></span>
- 								<h1><?php echo $slider[$a]['title']; ?></h1>
- 								<p><span><?php echo $slider[$a]['lugar']; ?></span></p>
- 								<a href="comprar.php" title="Comprar">Comprar</a>
- 							</article>
+							<a href="comprar.php" title="<?php echo $slider[$a]['title']; ?>">
+ 								<article class="texto-evento">
+ 										<span class="fecha"><?php echo $slider[$a]['fecha']; ?></span>
+ 										<h1><?php echo $slider[$a]['title']; ?></h1>
+ 										<p><span><?php echo $slider[$a]['lugar']; ?></span></p>
+ 										<span href="comprar.php" title="Comprar" class="comprar">Comprar</span>
+ 								</article>
+							</a>
  						</li>
  						<?php
  							}

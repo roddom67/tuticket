@@ -11,7 +11,8 @@ $(function(){
 					autoControls: false,
 					auto:true,
 					pager: true,
-					mode: 'fade'
+					mode: 'fade',
+					touchEnabled: 'false'
 				});
 			}
 		}
