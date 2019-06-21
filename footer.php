@@ -66,6 +66,7 @@
 <script type="text/javascript" src="js/jquery.bxslider.js?v=<?php echo $v; ?>"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js?v=<?php echo $v; ?>"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js?v=<?php echo $v; ?>"></script>
+<script src="js/ninja-slider.js" type="text/javascript"></script>
 
 <script type="text/javascript" src="js/funciones.js?v=<?php echo $v; ?>"></script>
 </body>

@@ -11,8 +11,7 @@ $(function(){
 					autoControls: false,
 					auto:true,
 					pager: true,
-					mode: 'fade',
-					touchEnabled: 'false'
+					mode: 'fade'
 				});
 			}
 		}
@@ -34,55 +33,6 @@ $(function(){
 	
 	sliderPromo.init();
 	
-
-	articleHeight = {
-		init: function(){
-			var self = this;
-			if( $('html').hasClass('mobile')){
-				if($('section').hasClass('textImageArea')){
-					this.alturas($('.textImageArea'));
-				}
-				if($('section').hasClass('textMapArea')){
-					this.alturas($('.textMapArea'));
-				}
-			}
-		},
-		alturas: function(e){
-			var e = e;
-			var alt = 0;
-			e.find('article').each(function(e){
-				if( alt < $(this).outerHeight()){
-					alt = $(this).outerHeight();
-				}
-			});
-			e.find('article').each(function(e){
-				$(this).css('height', alt);
-			});
-			
-		}
-	}
-	articleHeight.init();
-	
-
-	acordion = {
-		init: function(){
-			if($('section').find('.accordion')){
-				$('.accordion').accordion({
-					active: false,
-					collapsible: true,
-					heightStyle: "content"
-				});
-			}
-		}
-	}
-	if($('body').hasClass('el-barrio')){
-		if($(window).width() < 767 ){
-			acordion.init();
-		}
-	}else{
-		acordion.init();
-	}
-
 
 })
 

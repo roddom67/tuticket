@@ -18,8 +18,9 @@
 		</header>
   	<!-- Content here -->
   		<section class="eventosArea">
- 				<article class="slider">
- 					<ul class="sliderArea">
+			<article class="slider " id="ninja-slider">
+  				<div class="slider-inner">
+ 					<ul class="">
  						<?php
  							$slider = array(
  								array(
@@ -57,8 +58,9 @@
  							}
  						?>
 					</ul>
- 				</article>
- 		</section>
+ 				</div>
+			</article>
+		</section>
 
  		<section class="eventosDestacados">
  			<div class="container-fluid">

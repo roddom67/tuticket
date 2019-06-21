@@ -28,6 +28,7 @@
    
 	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,600,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css?v=<?php echo $v; ?>" >
+	<link href="css/ninja-slider.css?v=<?php echo $v; ?>" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/style.css?v=<?php echo $v; ?>" >
 	
 	<title><?php echo $headTitulo; ?></title>
