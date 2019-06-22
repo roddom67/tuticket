@@ -228,6 +228,7 @@ header{
 }
 #ninja-slider li{
 	background-size:cover;
+	background-position: center;
 }
 .sliderArea, 
 .sliderArea > li{
@@ -238,7 +239,7 @@ header{
     background-position: center;
     background-size: cover;
 }
-.sliderArea li a{
+.sliderArea li > a{
 	display: block;
 	width: 100%;
 	height: 100%;

@@ -2,10 +2,10 @@
 var nsOptions =
 {
     sliderId: "ninja-slider",
-    transitionType: "slide vertical", //or "fade", "slide", "zoom", "kenburns 1.2"
+    transitionType: "fade", //or "fade", "slide", "zoom", "kenburns 1.2"
     autoAdvance: true,
     rewind: true,
-    delay: "default",
+    delay: 6000,
     transitionSpeed: "default",
     aspectRatio: "?:100%", //responsive scaling based on window height
     initSliderByCallingInitFunc: false,
